@@ -1,0 +1,7 @@
+<div class="container">
+  <ul class="layers-list">
+    <% @layers.each do |layer| %>
+      <%= content_tag(:li, link_to(layer.name, layer_path(layer))) %>
+    <% end %>
+  </ul>
+</div>

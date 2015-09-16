@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="page-header project-header">
+    <h1><%= @project.name %></h1>
+    <div class="btn-group">
+      <%#= button_to 'Back', list_projects_path, method: :get, :class => 'btn' %>
+      <%= button_to 'Edit', edit_project_path(@project), method: :get, :class => 'btn btn-primary' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <strong>Description:</strong>
+      <%= @project.description %>
+    </div>
+  </div>
+</div>
