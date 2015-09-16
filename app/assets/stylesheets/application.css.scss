@@ -14,3 +14,8 @@ h2 { font: 400 32pt/1.5 'Quicksand', Helvetica, sans-serif; }
 h3 { font: 700 26pt/1.5 'Quicksand', Helvetica, sans-serif; }
 h4 { font: 700 22pt/1.5 'Quicksand', Helvetica, sans-serif; }
 h5 { font: 700 18pt/1.5 'Quicksand', Helvetica, sans-serif; }
+
+// Bootstrap fixes
+.page-header {
+  border-bottom: 1px solid $dash-primary-color;
+}
