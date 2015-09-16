@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="page-header layer-header">
+    <h1><%= @layer.name %></h1>
+    <div class="btn-group">
+      <%#= button_to 'Back', list_layers_path, method: :get, :class => 'btn' %>
+      <%= button_to 'Edit', edit_layer_path(@layer), method: :get, :class => 'btn btn-primary' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <strong>Description:</strong>
+      <%= @layer.description %>
+    </div>
+  </div>
+</div>

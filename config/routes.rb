@@ -12,6 +12,10 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'dashboard#index', as: 'dashboard'
   root 'static_pages#index'
 
+  resources :projects
+  resources :layers
+  resources :fields
+  resources :field_values
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
