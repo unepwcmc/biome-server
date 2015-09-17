@@ -4,6 +4,7 @@
     <div class="btn-group">
       <%#= button_to 'Back', list_layers_path, method: :get, :class => 'btn' %>
       <%= button_to 'Edit', edit_layer_path(@layer), method: :get, :class => 'btn btn-primary' %>
+      <%= button_to 'Destroy', layer_path(@layer), method: :delete, data: { confirm: "Are you sure?" }, :class => 'btn btn-primary' %>
     </div>
   </div>
 
