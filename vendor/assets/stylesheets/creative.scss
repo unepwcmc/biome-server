@@ -181,13 +181,14 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(http://placehold.it/1900x1267);
+    background-image: url(https://amazingpict.com/wp-content/uploads/2014/05/Rainforest-Bridge-Wallpaper.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
+
 
 header .header-content {
     position: relative;
@@ -453,13 +454,13 @@ fieldset[disabled] .btn-primary.active {
 }
 
 ::-moz-selection {
-    text-shadow: none;
+    //text-shadow: none;
     color: #fff;
     background: #222;
 }
 
 ::selection {
-    text-shadow: none;
+    //text-shadow: none;
     color: #fff;
     background: #222;
 }

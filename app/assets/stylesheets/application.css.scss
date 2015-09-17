@@ -8,12 +8,14 @@
 
 // Typography
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 h1 { font: 700 32pt/1.5 'Quicksand', Helvetica, sans-serif; }
 h2 { font: 400 32pt/1.5 'Quicksand', Helvetica, sans-serif; }
 h3 { font: 700 26pt/1.5 'Quicksand', Helvetica, sans-serif; }
 h4 { font: 700 22pt/1.5 'Quicksand', Helvetica, sans-serif; }
 h5 { font: 700 18pt/1.5 'Quicksand', Helvetica, sans-serif; }
+p { font: 400 14pt/1.5 'Open Sans', Helvetica, sans-serif; }
 
 .logo-lg {
   font-family: 'Quicksand', Helvetica, sans-serif;
@@ -25,3 +27,6 @@ h5 { font: 700 18pt/1.5 'Quicksand', Helvetica, sans-serif; }
 .page-header {
   border-bottom: 1px dashed $dash-primary-color;
 }
+.navbar-brand { font: 700 16pt/1.5 'Quicksand', Helvetica, sans-serif; }
+
+.drop-shadow { text-shadow: 2px 2px 5px #777; }
