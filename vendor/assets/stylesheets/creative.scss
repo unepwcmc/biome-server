@@ -62,8 +62,13 @@ p {
 }
 
 .bg-dark {
+    background-image: image-url("8.jpg");
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
     color: #fff;
-    background-color: #222;
 }
 
 .text-faded {
