@@ -28,4 +28,12 @@ p { font: 400 14pt/1.5 'Open Sans', Helvetica, sans-serif; }
 
 .navbar-brand { font: 700 16pt/1 'Quicksand', Helvetica, sans-serif; }
 
-.drop-shadow { text-shadow: 1px 1px 2px #333; }
+//.drop-shadow { text-shadow: 1px 1px 1px $dash-secondary-color; margin-bottom: 30px; }
+h2.block-background>span {
+  display: inline-block;
+  background-color: rgba(18, 200, 149, 0.7);
+  border-radius: 2px;
+  //line-height: 2em;
+  padding: 15px;
+
+}
