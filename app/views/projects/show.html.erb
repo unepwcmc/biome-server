@@ -4,6 +4,7 @@
     <div class="btn-group">
       <%#= button_to 'Back', list_projects_path, method: :get, :class => 'btn' %>
       <%= button_to 'Edit', edit_project_path(@project), method: :get, :class => 'btn btn-primary' %>
+      <%= button_to 'Destroy', project_path(@project), method: :delete, data: { confirm: "Are you sure?" }, :class => 'btn btn-primary' %>
     </div>
   </div>
 
