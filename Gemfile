@@ -52,6 +52,7 @@ gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 gem 'annotate'
 group :production do
+  gem 'unicorn'
   gem 'rails_12factor'
 end
 
