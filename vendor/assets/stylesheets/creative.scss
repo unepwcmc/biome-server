@@ -62,8 +62,13 @@ p {
 }
 
 .bg-dark {
+    background-image: image-url("8.jpg");
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
     color: #fff;
-    background-color: #222;
 }
 
 .text-faded {
@@ -131,7 +136,7 @@ aside {
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
+        color: rgba(255,255,255,1);
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
@@ -181,13 +186,14 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(http://placehold.it/1900x1267);
+    background-image: image-url("7.jpg");
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
+
 
 header .header-content {
     position: relative;
@@ -221,7 +227,7 @@ header .header-content .header-content-inner p {
 
     header .header-content {
         position: absolute;
-        top: 50%;
+        top: 47%;
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -453,13 +459,13 @@ fieldset[disabled] .btn-primary.active {
 }
 
 ::-moz-selection {
-    text-shadow: none;
+    //text-shadow: none;
     color: #fff;
     background: #222;
 }
 
 ::selection {
-    text-shadow: none;
+    //text-shadow: none;
     color: #fff;
     background: #222;
 }

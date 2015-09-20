@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Biome</title>
+    <title>biome | a better data collection tool</title>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -11,6 +11,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+    <%= favicon_link_tag 'favicon.ico' %>
   </head>
   <body class="hold-transition skin-blue sidebar-mini">
     <!-- Site wrapper -->
@@ -91,9 +92,7 @@
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-pie-chart"></i>
-                <span>Layers</span>
-                <i class="fa fa-angle-left pull-right"></i>
+                <i class="fa fa-table"></i> <span>Datasets</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
                 <li><%= link_to layers_path do %><%= fa_icon "list" %> All Layers<% end %></li>
@@ -102,8 +101,27 @@
             </li>
             <li class="treeview">
               <a href="#">
+                <i class="fa fa-line-chart"></i> <span>Analysis</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><%= link_to projects_path do %><%= fa_icon "list" %> All Projects<% end %></li>
+                <li><%= link_to new_project_path do %><%= fa_icon "pencil" %> Create New Project<% end %></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-download"></i> <span>Export Data</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><%= link_to projects_path do %><%= fa_icon "list" %> All Projects<% end %></li>
+                <li><%= link_to new_project_path do %><%= fa_icon "pencil" %> Create New Project<% end %></li>
+              </ul>
+            </li>
+
+            <li class="treeview">
+              <a href="#">
                 <i class="fa fa-laptop"></i>
-                <span>UI Elements</span>
+                <span>Manage Access</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
@@ -114,12 +132,6 @@
                 <li><a href="../UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
                 <li><a href="../UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
               </ul>
-            </li>
-            <li>
-              <a href="../mailbox/mailbox.html">
-                <i class="fa fa-envelope"></i> <span>Mailbox</span>
-                <small class="label pull-right bg-yellow">12</small>
-              </a>
             </li>
             <li><a href="../../documentation/index.html"><i class="fa fa-book"></i> <span>Help Guide</span></a></li>
           </ul>
@@ -134,12 +146,12 @@
         </section>
       </div>
 
-      <%#<footer class="main-footer">%>
-        <%#<div class="pull-right hidden-xs">%>
-          <%#<b>Version</b> 2.3.0%>
-        <%#</div>%>
-        <%#<strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.%>
-      <%#</footer>%>
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+
+        </div>
+        <strong>Copyright &copy; 2015 <a href="#">biome</a>.</strong> All rights reserved.
+      </footer>
 
       <!-- Control Sidebar -->
       <aside class="control-sidebar control-sidebar-dark">

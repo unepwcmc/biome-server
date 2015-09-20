@@ -55,6 +55,8 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:name, :description)
+    params.require(:project).permit(:name, :description, layers_attributes: [:id, :name, :_destroy],
+                                    layers_projects_attributes: [:id, :layer_id, :_destroy],
+                                    fields_attributes: [:id, :name, :layer_id,  :_destroy])
   end
 end

@@ -8,20 +8,37 @@
 
 // Typography
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 h1 { font: 700 32pt/1.5 'Quicksand', Helvetica, sans-serif; }
 h2 { font: 400 32pt/1.5 'Quicksand', Helvetica, sans-serif; }
 h3 { font: 700 26pt/1.5 'Quicksand', Helvetica, sans-serif; }
 h4 { font: 700 22pt/1.5 'Quicksand', Helvetica, sans-serif; }
 h5 { font: 700 18pt/1.5 'Quicksand', Helvetica, sans-serif; }
+p { font: 400 14pt/1.5 'Open Sans', Helvetica, sans-serif; }
 
 .logo-lg {
   font-family: 'Quicksand', Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
+
   font-size: 26px;
 }
 
 // Bootstrap fixes
-.page-header {
-  border-bottom: 1px dashed $dash-primary-color;
+.page-header { border-bottom: 1px dashed $dash-primary-color; }
+
+.navbar-brand { font: 700 16pt/1 'Quicksand', Helvetica, sans-serif; }
+
+.drop-shadow { text-shadow: 0px 1px 0px #888; }
+h2.block-background>span {
+  display: inline-block;
+  background-color: rgba(18, 200, 149, 0.7);
+  border-radius: 2px;
+  //line-height: 2em;
+  padding: 15px;
+}
+
+.feature-image {
+  border-radius: 2px;
+  box-shadow: 0px 0px 5px 0px transparentize($background-color, 0.5);
 }

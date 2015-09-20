@@ -1,6 +1,12 @@
 @import 'bootsaas_colors';
 
 .devise {
+ background-image: image-url("7.jpg");
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
   background-color: $background-color;
   padding-top: 10%;
 }

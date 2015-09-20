@@ -1,3 +1,4 @@
 class Layer < ActiveRecord::Base
-  has_and_belongs_to_many :projects
+  has_many :layers_projects
+  has_many :projects, through: :layers_projects
 end
