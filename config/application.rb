@@ -23,13 +23,20 @@ module Biome
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
 
-	config.to_prepare do
-          	Devise::SessionsController.layout 'devise'
-          	Devise::ConfirmationsController.layout 'devise'
-          	Devise::UnlocksController.layout 'devise'
-          	Devise::PasswordsController.layout 'devise'
-          	Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? 'dashboard' : 'devise' }
-          	Devise::Mailer.layout 'mailer'
-        	end
+    config.to_prepare do
+      Devise::SessionsController.layout 'devise'
+      Devise::ConfirmationsController.layout 'devise'
+      Devise::UnlocksController.layout 'devise'
+      Devise::PasswordsController.layout 'devise'
+      Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? 'dashboard' : 'devise' }
+      Devise::Mailer.layout 'mailer'
+    end
+
+    config.middleware.insert_before 0, "Rack::Cors" do
+      allow do
+        origins '*'
+        resource '*', :headers => :any, :methods => [:get, :post, :options]
+      end
+    end
   end
 end
