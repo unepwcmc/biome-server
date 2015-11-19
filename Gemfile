@@ -57,3 +57,4 @@ group :production do
 end
 
 gem 'devise'
+gem 'dotenv-rails', '~> 2.0.2'
