@@ -3,13 +3,17 @@ default: &default
   encoding: unicode
   pool: 5
 
-  database: biome_<%= ENV.fetch("RAILS_ENV") %>
+  database: biome_server_<%= Rails.env %>
 
   host:     <%= ENV.fetch("DB_HOST") %>
   username: <%= ENV.fetch("DB_USERNAME") %>
   password: <%= ENV.fetch("DB_PASSWORD") %>
 
-development: <<: *default
-test: <<: *default
-staging: <<: *default
-production: <<: *default
+development: 
+  <<: *default
+test: 
+  <<: *default
+staging: 
+  <<: *default
+production: 
+  <<: *default
