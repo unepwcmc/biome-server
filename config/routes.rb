@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   authenticated :user do
     root :to => 'dashboard#index', :as => 'authenticated_root'
-    post 'validations#create', as: 'create_validation'
+    post '/validations' => 'validations#create', as: 'create_validation'
   end
 
   devise_for :users, :controllers => {sessions: 'sessions', registrations: 'registrations'}
