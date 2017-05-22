@@ -1,4 +1,4 @@
-lock '3.6.1'
+lock '3.8.0'
 
 set :application, 'biome-server'
 set :repo_url, 'git@github.com:unepwcmc/biome-server.git'
